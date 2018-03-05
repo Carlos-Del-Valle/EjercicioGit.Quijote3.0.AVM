@@ -29,7 +29,12 @@ para borrar los cambios realizados en el working copy.
 
 ```
 git reflog
+
+ERROR!!!
 git reset 6b85a38 
+
+CORRECIÓN
+
 
 ```
 El primer comando para indexar las acciones y generar los números de referencia de cada uno. El segundo para volver al estado (y rehacer el último commit): 
@@ -77,7 +82,7 @@ git log --graph
 Nota: por algún motivo el comando
 
 ```
-$ git log --graph --decorate --pretty=oneline
+git log --graph --decorate --pretty=oneline
 
 ```
 
@@ -88,7 +93,10 @@ no arrojaba todos los datos que debería mostrar.
 
 "Paso 26: Hacer un merge no fast-forward de “title” en “master” (“master” absorbe a “title”)."
 
+ERROR!!
 No podría ser fast forward ya que existían modificaciones disyuntivas. Existían ramas paralelas.
+CORRECIÓN
+Sí, porque titlw sólo está un commit por delante de master y forman una lista
 
 
 **- ¿Qué comando o comandos utilizaste en el paso 27?**
@@ -139,7 +147,11 @@ git reflog
 
 (e0bcb07 HEAD@{3}: merge title: Fast-forward)
 
+ERROR! 
 git reset e0bcb07
+
+Correción
+git reset --hard e0bc07
 
 ```
 
