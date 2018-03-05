@@ -3,7 +3,8 @@
 
 **- ¿Qué comando utilizaste en el paso 11? ¿Por qué?**
 
-"Paso11: Deshacer el último commit (perdiendo los cambios realizados en elworking copy)" 
+"Paso11: Deshacer el último commit (perdiendo los cambios realizados en el
+working copy)" 
 
 Utilicé este comando 
 
@@ -43,12 +44,14 @@ El primer comando para indexar las acciones y generar los números de referencia
 "Paso 13: Hacer un merge con “master” (“styled" absorbe a “master”)."
 
 No, ya que ningún commmit se superponía al otro ni creaba ninguna disyunción.
-**- El merge del paso 19, ¿Causó algún conflicto? ¿Por qué?**
+
+**- El merge del paso 19, ¿Causó algún conflicto? ¿Por qué?**
 
 "Paso 19: Hacer un merge de “htmlify” en “styled” (“styled" absorbe a “htmlify”)."
 
 Sí, los commits de las diferentes ramas tenían información que se superponía una la otra. Siguiendo el guión del ejercicio, sobrescribí la información de la rama "styled" a la de la rama “htmlify".
-**- El merge del paso 21, ¿Causó algún conflicto? ¿Por qué?**
+
+**- El merge del paso 21, ¿Causó algún conflicto? ¿Por qué?**
 
 "Paso 21: Desde “master”, hacer un merge con “styled”."
 
@@ -80,7 +83,8 @@ $ git log --graph --decorate --pretty=oneline
 
 no arrojaba todos los datos que debería mostrar.
 
-**- El merge del paso 26, ¿Podría ser fast forward? ¿Por qué?**
+
+**- El merge del paso 26, ¿Podría ser fast forward? ¿Por qué?**
 
 "Paso 26: Hacer un merge no fast-forward de “title” en “master” (“master” absorbe a “title”)."
 
@@ -96,7 +100,8 @@ git reset HEAD~1
 
 ```
 
-**- ¿Qué comando o comandos utilizaste en el paso 28?**
+
+**- ¿Qué comando o comandos utilizaste en el paso 28?**
 
 "Paso 28: Descartar los cambios."
 
@@ -106,9 +111,16 @@ Sin tener muy claro a que cambios se refería. Volví un paso atrás y deshicé 
 git reset HEAD~1
 git reset --hard HEAD~1
 
+ERROR!!!!
+
+Respuesta correcta:
+
+git checkout --don-quijote.md
+
 ```
 
-**- ¿Qué comando o comandos utilizaste en el paso 29?**
+
+**- ¿Qué comando o comandos utilizaste en el paso 29?**
 
 "Paso 29: Eliminar la rama “title”."
 
@@ -116,7 +128,8 @@ git reset --hard HEAD~1
 git branch -D title
 
 ```
-**- ¿Qué comando o comandos utilizaste en el paso 30?**
+
+**- ¿Qué comando o comandos utilizaste en el paso 30?**
 
 "Paso 30: Rehacer el merge que hemos deshecho."
 
@@ -131,7 +144,8 @@ git reset e0bcb07
 ```
 
 
-**- ¿Qué comando o comandos usaste en el paso 32?**
+
+**- ¿Qué comando o comandos usaste en el paso 32?**
 
 "Paso 32: Volver al commit inicial cuando se creó el poema."
 
@@ -148,7 +162,8 @@ git log --graph
 git checkout 1be16f989885833fdacd9e9c4e2ad350a1dd5a8f
 
 ```
-**- ¿Qué comando o comandos usaste en el punto 33?**
+
+**- ¿Qué comando o comandos usaste en el punto 33?**
 
 "Paso 33: Volver al estado final, cuando pusimos título al poema."
 
